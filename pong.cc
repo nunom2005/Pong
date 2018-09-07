@@ -113,6 +113,7 @@ int main()
         gameHeight = window.getSize().y;
         gameWidth = window.getSize().x;
         pauseMessage.setPosition(gameWidth / 3 , gameHeight / 3);
+        scoreText.setPosition(gameWidth / 2, gameHeight / 7);
         // Handle events
         sf::Event event;
         while (window.pollEvent(event))
@@ -151,8 +152,7 @@ int main()
                     while (std::abs(std::cos(ballAngle)) < 0.7f);
                 }
             }
-            
-            if(event.type == sf::Event::Resized)
+            else if(event.type == sf::Event::Resized)
             {
                 window.setView(sf::View(sf::FloatRect(0.f, 0.f,static_cast<float>(window.getSize().x), static_cast<float>(window.getSize().y))));
             }
