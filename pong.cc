@@ -37,7 +37,7 @@ int main()
 	int score = 0;
 
     // Create the window of the application
-    sf::RenderWindow window(sf::VideoMode(gameWidth, gameHeight, 32), "Pong! But it's impossible to beat...",
+    sf::RenderWindow window(sf::VideoMode(gameWidth, gameHeight, 32), "Pong!",
                             sf::Style::Default);
     // Enable Vertical Sync
     // window.setVerticalSyncEnabled(true);
